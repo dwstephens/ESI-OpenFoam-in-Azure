@@ -19,6 +19,15 @@ https://www.openfoam.com/download/install-binary-linux.php
 # Task 2 (for a)
 Build Binaries from Source
 
+mkdir $HOME/OpenFOAM 
+
+mv ThirdParty-v1806 OpenFOAM-v1806 $HOME/OpenFOAM
+
+tar -xzf OpenFOAM-v1806.tgz 
+tar -xzf ThirdParty-v1806.tgz 
+
+
+
 # Task 3 
 
 
