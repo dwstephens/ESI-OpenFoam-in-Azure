@@ -28,14 +28,14 @@ Please visit the requirements page
 https://www.openfoam.com/documentation/system-requirements.php
 
 Usually you should do the following on your VM
-
+```
 sudo yum -y update
 sudo yum -y install centos-release-scl
 sudo yum -y install devtoolset-4-gcc*
 scl enable devtoolset-4 bash  (gcc 5.3.1)
 sudo yum -y install boost qt fftw
 export LD_PRELOAD="libmpi.so" 
-
+```
 # Task 3b (for 2b) Install Binaries with Docker EE
 
 Create Service Principal
