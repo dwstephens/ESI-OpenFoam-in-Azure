@@ -1,16 +1,16 @@
 # ESI-OpenFoam-in-Azure
 How to install and run OpenFOAM in Azure 
 
-
-
-# Task 2
+# Task 1
 Download Source or Binaries
 a) Linux Source
 https://www.openfoam.com/download/install-source.php
 b) Linux Binaries
 https://www.openfoam.com/download/install-binary-linux.php
 
-# Task 3 (for 2a)
+The binaries will only work with Docker CE or Docker EE
+
+# Task 2a (Build from Source)
 
 Create VM
 F64v2
@@ -36,7 +36,7 @@ scl enable devtoolset-4 bash  (gcc 5.3.1)
 sudo yum -y install boost qt fftw
 export LD_PRELOAD="libmpi.so" 
 
-# Task 3b (for 2b)
+# Task 3b (for 2b) Install Binaries with Docker EE
 
 Create Service Principal
 
@@ -64,9 +64,7 @@ Docker EE for Azure (Basic) - [17.06] from Marketplace
 Select the type and number of workers
 
 
-
-
-
+https://github.com/schoenemeyer/ESI-OpenFoam-in-Azure/blob/master/portal-docker-ee.JPG
 
 
 
