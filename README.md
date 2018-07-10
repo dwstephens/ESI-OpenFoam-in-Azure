@@ -43,7 +43,7 @@ Create Service Principal
 az ad sp create-for-rbac --name dockeree
 
 you will get
-
+```
 thomas@DE-LOANER514:~$ az ad sp create-for-rbac --name dockeree
 Retrying role assignment creation: 1/36
 Retrying role assignment creation: 2/36
@@ -55,7 +55,7 @@ Retrying role assignment creation: 2/36
   "tenant": "7xxxxxxxxxxxxxxxxxxxxxxxxxxxx7"
 }
 thomas@DE-LOANER514:~$
-
+```
 You will need these details for creating the VM.
 
 Create VM with Docker EE
