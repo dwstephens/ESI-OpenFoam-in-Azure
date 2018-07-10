@@ -61,17 +61,9 @@ You will need these details for creating the VM.
 Create VM with Docker EE
 Docker EE for Azure (Basic) - [17.06] from Marketplace
 
-Select the type and number of workers
+Select the type and number of workers as shown below
 
-
-
-<img src="https://github.com/schoenemeyer/ESI-OpenFoam-in-Azure/blob/master/portal-docker-ee.JPG" width="252">
-
-
-
-
-
-
+<img src="https://github.com/schoenemeyer/ESI-OpenFoam-in-Azure/blob/master/portal-docker-ee.JPG" width="412">
 
 
 Build Binaries from Source
