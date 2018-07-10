@@ -2,6 +2,12 @@
 How to install and run OpenFOAM in Azure 
 
 
+# Task 1
+Create VM
+F64v2
+CentOS HPC 7.4
+
+
 Version 1806 supported by ESI
 
 F64v2 with Skylake Platinum
@@ -9,16 +15,22 @@ F64v2 with Skylake Platinum
 This VM is available since October 
 https://azure.microsoft.com/en-us/blog/fv2-vms-are-now-available-the-fastest-vms-on-azure/
 
-# Task 1
+# Task 2
 Download Source or Binaries
 a) Linux Source
 https://www.openfoam.com/download/install-source.php
 b) Linux Binaries
 https://www.openfoam.com/download/install-binary-linux.php
 
-# Task 2 (for a)
+# Task 3 (for 2a)
+
+Please visit the requirements page
+https://www.openfoam.com/documentation/system-requirements.php
+
+
 Build Binaries from Source
 
+```
 mkdir $HOME/OpenFOAM 
 
 mv ThirdParty-v1806 OpenFOAM-v1806 $HOME/OpenFOAM
@@ -26,7 +38,15 @@ mv ThirdParty-v1806 OpenFOAM-v1806 $HOME/OpenFOAM
 tar -xzf OpenFOAM-v1806.tgz 
 tar -xzf ThirdParty-v1806.tgz 
 
+source /opt/intel/impi/5.1.3.223/intel64/bin/mpivars.sh
+```
+Follow the Build Guide 
+https://www.openfoam.com/code/build-guide.php, e.g. 
+edit etc/bashrc and select INTELMPI for WM_MPLIB
+```
+export WM_MPLIB=INTELMPI
 
+```
 
 # Task 3 
 
