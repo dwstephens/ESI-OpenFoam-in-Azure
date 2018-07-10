@@ -64,8 +64,8 @@ Docker EE for Azure (Basic) - [17.06] from Marketplace
 Select the type and number of workers
 
 
-https://github.com/schoenemeyer/ESI-OpenFoam-in-Azure/blob/master/portal-docker-ee.JPG
 
+<img src="https://github.com/schoenemeyer/ESI-OpenFoam-in-Azure/blob/master/portal-docker-ee.JPG" width="252">
 
 
 
