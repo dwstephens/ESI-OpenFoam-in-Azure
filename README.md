@@ -2,6 +2,42 @@
 How to install and run OpenFOAM in Azure 
 
 # Task 1
+
+Prepare a virtual machine in the Azure Portal. E.g. A8, A9 or H16r with CentOS7.4 HPC.
+
+Install Intel Compiler 
+```
+yum -y update
+
+#
+# Allow sudo without password for all users in group wheel
+#
+sed -e 's|^%wheel|# %wheel|g' -i /etc/sudoers
+echo -e "\n%wheel        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
+
+
+#
+# Install some required repositories
+#
+if ! yum -y install epel-release > /dev/null 2>&1 ; then
+        wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-${major_version}.noarch.rpm
+        yum -y localinstall epel-release-latest-${major_version}.noarch.rpm
+fi
+
+yum -y install joe multitail wget nmap nfs-utils cifs-utils xterm hwloc hwloc-gui bmon iftop iptraf-ng perf sysstat iperf iperf3 fping htop screen tmux pciutils tcsh most clustershell azure-cli hyperv-tools zlib-devel
+
+yum -y install dapl-static dapl-devel libibverbs libibverbs-utils infiniband-diags rdma-core rdma-core-devel kernel-deve
+l kernel-headers tcl-devel numactl numactl-devel numactl-libs
+
+yum -y groupinstall "Development Tools" "X Window System"
+```
+# Task2 
+
+Install OpenFOAM
+
+
+# Task3
+
 Download Source or Binaries
 a) Linux Source
 https://www.openfoam.com/download/install-source.php
