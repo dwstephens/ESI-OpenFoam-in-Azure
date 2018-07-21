@@ -1,5 +1,6 @@
 # ESI-OpenFoam-in-Azure
-How to install and run OpenFOAM-v1806 (ESI) in Azure 
+How to install and run OpenFOAM-v1806 (ESI) in Azure . Check this website for details on the code https://www.openfoam.com/code/repositories.php
+
 
 # Task 1
 
