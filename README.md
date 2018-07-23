@@ -2,7 +2,7 @@
 How to install and run OpenFOAM-v1806 (ESI) in Azure . Check this website for details on the code https://www.openfoam.com/code/repositories.php
 
 
-# Task 1
+## Task 1 - Create VM
 
 Prepare a virtual machine in the Azure Portal. E.g. A8, A9 or H16r with CentOS7.4 HPC and connect to the machine.
 
