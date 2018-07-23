@@ -6,6 +6,8 @@ How to install and run OpenFOAM-v1806 (ESI) in Azure . Check this website for de
 
 Prepare a virtual machine in the Azure Portal. E.g. A8, A9 or H16r with CentOS7.4 HPC and connect to the machine.
 
+## Task 2 - Install basic packages and tools
+
 Install Intel Compiler tar -xzf parallel_studio_xe_2018_update1_cluster_edition_online.tgz
 An Evaluation License can be downloaded from http://registrationcenter-download.intel.com
 
@@ -34,9 +36,10 @@ l kernel-headers tcl-devel numactl numactl-devel numactl-libs
 
 yum -y groupinstall "Development Tools" "X Window System"
 ```
-# Task2 - Install OpenFOAM v1806 on the VM
 
-Install OpenFOAM
+## Task3 - Install OpenFOAM v1806 on the VM
+
+
 You can get the source directly from https://www.openfoam.com/releases/openfoam-v1806/ . This version (OpenFOAM plus) is maintained and supported by OpenCFD limited. 
 Or you can download from Azure Blob Storage :
 ```
@@ -46,11 +49,16 @@ wget  https://hpccenth2lts.blob.core.windows.net/openfoam/ThirdParty-v1806.tgz
 mkdir OpenFOAM
 cd OpenFOAM
 
+change MPI Version in etc/bashrc to INTELMPI and Icc
 
-
-change MPI Version in etc/bashrc
 export WM_NCOMPPROCS=16
 source ~/OpenFOAM/OpenFOAM-v1806/etc/bashrc 
+```
+Check the readiness of the installation
+
+```
+foamSystemCheck 
+foam
 
 Aus <https://www.openfoam.com/code/build-guide.php> 
 
@@ -58,7 +66,17 @@ Aus <https://www.openfoam.com/code/build-guide.php>
 
 cd ~/OpenFOAM-v1712/tutorials/incompressible/simpleFoam/motorBike
 
+```
+## Task4 - Run the motobike case from the tutorial
+
+Run the motoBike case from the tutorial. Default is running with 6 cores. For different core counts one has to modify the system/decomp. and Allrun file.
 
 ```
+cd ~/OpenFOAM/OpenFOAM-v1806/tutorials/incompressible/simpleFoam/motorBike
+./Allclean
+./Allrun
+```
+
+Check the file log.simpleFoam.
 
 
