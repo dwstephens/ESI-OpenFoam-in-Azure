@@ -106,6 +106,7 @@ coeffs
 {
     n           (8 2 1);
 ```
+For a full list of other entries to the file please look here for more details https://cfd.direct/openfoam/user-guide/v6-running-applications-parallel/
 
 ```    
 ./Allclean
