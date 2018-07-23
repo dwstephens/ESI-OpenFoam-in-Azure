@@ -39,7 +39,7 @@ Install Intel Compiler tar -xzf parallel_studio_xe_2018_update1_cluster_edition_
 An Evaluation License can be downloaded from http://registrationcenter-download.intel.com
 
 
-## Task3 - Install OpenFOAM v1806 on the VM
+## Task 3 - Install OpenFOAM v1806 on the VM
 
 
 You can get the source directly from https://www.openfoam.com/releases/openfoam-v1806/ . This version (OpenFOAM plus) is maintained and supported by OpenCFD limited. 
@@ -69,7 +69,7 @@ Aus <https://www.openfoam.com/code/build-guide.php>
 cd ~/OpenFOAM-v1712/tutorials/incompressible/simpleFoam/motorBike
 
 ```
-## Task4 - Run the motobike case from the tutorial
+## Task 4 - Run the motobike case from the tutorial
 
 Run the motoBike case from the tutorial. Default is running with 6 cores. For different core counts one has to modify the system/decomp. and Allrun file.
 
