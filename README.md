@@ -115,7 +115,7 @@ For a full list of other entries to the file please look here for more details h
 
 Check the file log.simpleFoam.
 
-If you run on 4, 8 and 16 cores the MotorBike example , you should receive similar results:
+If you run the MotorBike simpleFoam example on 4, 8 and 16 cores , you should receive similar results:
 
 <img src="https://github.com/schoenemeyer/ESI-OpenFoam-in-Azure/blob/master/openfoam-a9.png" width="432">
 
