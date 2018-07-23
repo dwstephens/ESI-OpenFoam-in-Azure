@@ -71,9 +71,20 @@ cd ~/OpenFOAM-v1712/tutorials/incompressible/simpleFoam/motorBike
 ```
 ## Task 4 - Run the motobike case from the tutorial
 
-Run the motoBike case from the tutorial. Default is running with 6 cores. For different core counts one has to modify the system/decomp. and Allrun file.
+Run the motoBike case from the tutorial. Default is running with 6 cores. For different core counts one has to modify the system/decomposeParDict.x file. In the Allrun file line has to replaced 
 
 ```
+numberOfSubdomains 16;
+
+method          hierarchical;
+// method          ptscotch;
+
+coeffs
+{
+    n           (8 2 1);
+```
+
+```    
 cd ~/OpenFOAM/OpenFOAM-v1806/tutorials/incompressible/simpleFoam/motorBike
 ./Allclean
 ./Allrun
