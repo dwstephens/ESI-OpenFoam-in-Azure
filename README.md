@@ -8,9 +8,7 @@ Prepare a virtual machine in the Azure Portal. E.g. A8, A9 or H16r with CentOS7.
 
 ## Task 2 - Install basic packages and tools
 
-Install Intel Compiler tar -xzf parallel_studio_xe_2018_update1_cluster_edition_online.tgz
-An Evaluation License can be downloaded from http://registrationcenter-download.intel.com
-
+The basic packages below are not mandatory for OpenFOAM, but as a good practice it is recommended to follow the steps below.
 
 ```
 source /opt/intel/compilers_and_libraries/linux/bin/compilervars.sh -arch intel64 -platform linux
@@ -36,6 +34,10 @@ l kernel-headers tcl-devel numactl numactl-devel numactl-libs
 
 yum -y groupinstall "Development Tools" "X Window System"
 ```
+
+Install Intel Compiler tar -xzf parallel_studio_xe_2018_update1_cluster_edition_online.tgz
+An Evaluation License can be downloaded from http://registrationcenter-download.intel.com
+
 
 ## Task3 - Install OpenFOAM v1806 on the VM
 
