@@ -62,16 +62,39 @@ Check the readiness of the installation
 foamSystemCheck 
 foam
 
-Aus <https://www.openfoam.com/code/build-guide.php> 
-
+export WM_NCOMPPROCS=12
 ./Allwmake
 
 cd ~/OpenFOAM-v1712/tutorials/incompressible/simpleFoam/motorBike
 
 ```
+At the end there should be this output on the screen
+
+```
+2018-07-23 12:41:08 +0000
+========================================
+  Finished compile of cfMesh with OpenFOAM-v1806
+  Icc system compiler
+  linux64IccDPInt32Opt, with INTELMPI mpi
+
+
+2018-07-23 12:41:08 +0000
+========================================
+  OpenFOAM-v1806
+  Icc system compiler
+  linux64IccDPInt32Opt, with INTELMPI mpi
+
+12:41:08 [~/OpenFOAM/OpenFOAM-v1806]
+```
 ## Task 4 - Run the motobike case from the tutorial
 
-Run the motoBike case from the tutorial. Default is running with 6 cores. For different core counts one has to modify the system/decomposeParDict.x file. In the Allrun file line has to replaced 
+Run the motoBike case from the tutorial. Default is running with 6 cores. For different core counts one has to modify the system/decomposeParDict.x file. In the Allrun file line 6 has to replaced by pointing to this file.
+
+```
+cd ~/OpenFOAM/OpenFOAM-v1806/tutorials/incompressible/simpleFoam/motorBike
+
+```
+Example for a run with 16 cores.
 
 ```
 numberOfSubdomains 16;
@@ -85,7 +108,6 @@ coeffs
 ```
 
 ```    
-cd ~/OpenFOAM/OpenFOAM-v1806/tutorials/incompressible/simpleFoam/motorBike
 ./Allclean
 ./Allrun
 ```
