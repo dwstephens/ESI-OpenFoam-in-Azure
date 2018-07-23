@@ -115,4 +115,8 @@ For a full list of other entries to the file please look here for more details h
 
 Check the file log.simpleFoam.
 
+If you run on 4, 8 and 16 cores the MotorBike example , you should receive similar results:
+
+<img src="https://github.com/schoenemeyer/WRF3.8-in-Azure/blob/master/4-Figure2-1.png" width="252">
+
 
