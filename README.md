@@ -6,6 +6,12 @@ This lab describes a fast way how to install and run OpenFOAM-v1806 in Azure on 
 
 Prepare a virtual machine in the Azure Portal. E.g. A8, A9 or H16r with CentOS7.4 HPC and connect to the machine.
 
+## Option A Download the binaries for H16r with CentOS 7.4, unzip the file and start immediately with Task 4
+
+wget https://bigcompbasestore.blob.core.windows.net/public/openfoam-v1806.zip
+
+## Option B Build your own binaries
+
 ## Task 2 - Install basic packages and tools
 
 The basic packages below are not mandatory for OpenFOAM, but as a good practice it is recommended to follow the steps below.
