@@ -2,6 +2,7 @@
 This lab describes a fast way how to install and run OpenFOAM-v1806 in Azure on a single VM. The method can also be applied for older versions. The list of versions is available on the ESI/OpenCFD Ltd website https://www.openfoam.com/code/repositories.php
 
 
+
 ## Task 1 - Create VM
 
 Prepare a virtual machine in the Azure Portal. E.g. A8, A9 or H16r with CentOS7.4 HPC and connect to the machine.
