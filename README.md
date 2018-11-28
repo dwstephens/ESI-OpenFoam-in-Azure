@@ -5,9 +5,10 @@ This lab will describe how to run the simpleFoam motobike example including mesh
 
 <img src="https://github.com/schoenemeyer/ESI-OpenFoam-in-Azure/blob/master/moto.jpg" width="352">
 
-## Task 1 - Create VM
+## Task 1 - Create a VM for HPC
 
 Prepare a virtual machine in the Azure Portal. E.g. A8, A9 or H16r with CentOS7.4 HPC and connect to the machine.
+CentOS HPC includes the Intel MPI Library.
 
 ## Option A Download the binaries for H16r with CentOS 7.4, unzip the file and start immediately with Task 4
 
