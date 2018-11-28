@@ -98,7 +98,7 @@ At the end there should be this output on the screen
 ```
 ## Task 4 - Run the motobike case from the tutorial
 
-Run the motoBike case from the tutorial. Default is running with 6 cores. For different core counts one has to modify the system/decomposeParDict.x file. In the Allrun file line 6 has to replaced by pointing to this file.
+Run the motoBike case from the tutorial with 500 iterations. By default the mesh will be setup for a parallel run with with 6 cores. For different core counts one has to modify the system/decomposeParDict.x file. In the Allrun file line 6 has to replaced by pointing to this file.
 
 ```
 cd ~/OpenFOAM/OpenFOAM-v1806/tutorials/incompressible/simpleFoam/motorBike
