@@ -1,7 +1,9 @@
 # OpenFoam+ -in-Azure
-This lab describes a fast way how to install and run OpenFOAM-v1806 in Azure on a single VM. The method can also be applied for older versions. The list of versions is available on the ESI/OpenCFD Ltd website https://www.openfoam.com/code/repositories.php
+This lab describes a fast way how to install and run OpenFOAM-v1806 in Azure on a single VM. The method can also be applied for older versions of OpenFOAM. 
+The list of versions is available on the ESI/OpenCFD Ltd website https://www.openfoam.com/code/repositories.php
+This lab will describe how to run the simpleFoam motobike example including meshing on H series VMs in Azure.
 
-<img src="https://github.com/schoenemeyer/ESI-OpenFoam-in-Azure/blob/master/moto.jpg" width="252">
+<img src="https://github.com/schoenemeyer/ESI-OpenFoam-in-Azure/blob/master/moto.jpg" width="352">
 
 ## Task 1 - Create VM
 
