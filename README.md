@@ -53,10 +53,7 @@ An Evaluation License can be downloaded from http://registrationcenter-download.
 
 
 You can get the source directly from https://www.openfoam.com/releases/openfoam-v1806/ . This version (OpenFOAM plus) is maintained and supported by OpenCFD limited. 
-Or you can download from Azure Blob Storage :
-```
-wget https://hpccenth2lts.blob.core.windows.net/openfoam/OpenFOAM-v1806.tgz
-wget  https://hpccenth2lts.blob.core.windows.net/openfoam/ThirdParty-v1806.tgz
+
 
 mkdir OpenFOAM
 cd OpenFOAM
